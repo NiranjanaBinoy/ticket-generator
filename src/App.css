@@ -1,0 +1,70 @@
+  .logo-header {
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    margin: auto;
+  }
+  .logo-header img {
+    width: 20px;
+  }
+  .logo-header .heading-name {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 16px;
+  }
+  .heading{
+  text-align: center;
+  width: 35%;
+  margin: 0px auto;
+  }
+  .form-container {
+    width: 30%; 
+    margin: 10px auto;
+    padding: 20px;
+  }
+  .form-element {
+    font-size: 1rem;
+    display: grid;
+    padding: 8px;
+  }
+
+  input[type='text'] {
+    padding: 14px;
+    margin: 12px 0px;
+    border-radius: var(--border-radius-12);
+    background-color: transparent;
+    border-color: var(--color-neutral-500);
+    border-style: solid;
+    border-width: 1px;
+  }
+  button {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 2px;
+    border-radius: var(--border-radius-12);
+    background-color: var(--color-orange-500);
+    color: var(--color-neutral-900);
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: var(--color-orange-700);
+  }
+  .file-upload {
+    justify-items: center;
+    border-style: dashed;
+    border-color: var(--color-neutral-500);
+    border-radius: var(--border-radius-12);
+    margin-top: 12px;
+    padding: 14px;
+    color: var(--color-neutral-300);
+    opacity: 0.8;
+}
+.hint-text {
+  display: flex;
+  font-size: 12px;
+  color: var(--color-neutral-300);
+}
+.hint-text p {
+  margin-left: 4px;
+}
