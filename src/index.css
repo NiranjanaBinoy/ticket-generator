@@ -1,12 +1,24 @@
+@font-face {
+  font-family: "InconsolataRegular"; 
+  src: local("Inconsolata-Regular"),
+    url("./fonts/static/Inconsolata-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InconsolataMedium"; 
+  src: local("Inconsolata-Medium"),
+    url("./fonts/static/Inconsolata-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InconsolataBold"; 
+  src: local("Inconsolata-Bold"),
+    url("./fonts/static/Inconsolata-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InconsolataExtraBold"; 
+  src: local("Inconsolata-ExtraBold"),
+    url("./fonts/static/Inconsolata-ExtraBold.ttf") format("truetype");
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* line-height: 1.5;
-  font-weight: 400; */
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,75 +42,69 @@
   --border-radius-20:20px;
   --border-radius-24:24px;
   --border-radius-999:999px;
+  --spacing-0:0px;
+  --spacing-025:2px;
+  --spacing-050:4px;
+  --spacing-075:6px;
+  --spacing-100:8px;
+  --spacing-150:12px;
+  --spacing-200:16px;
+  --spacing-250:20px;
+  --spacing-300:24px;
+  --spacing-400:32px;
+  --spacing-500:40px;
+  --spacing-600:48px;
+  --spacing-700:56px;
+  --spacing-800:64px;
+  --spacing-1000:80px;
+  --radius-0:0px;
+  --radius-4:4px;
+  --radius-6:6px;
+  --radius-8:8px;
+  --radius-10:10px;
+  --radius-12:12px;
+  --radius-16:16px;
+  --radius-20:20px;
+  --radius-24:24px;
+  --radius-full:999px;
+  --text-preset-1-font-size: 3.75rem; /* 60px */
+  --text-preset-2-font-size: 2.5rem; /* 40px */
+  --text-preset-3-font-size: 1.875rem; /* 30px */
+  --text-preset-4-font-size: 1.5rem; /* 24px */
+  --text-preset-5-font-size: 1.25rem; /* 20px */
+  --text-preset-6-font-size: 1.125rem; /* 18px */
+  --text-preset-7-font-size: 0.75rem; /* 12px */
+  --text-preset-1-mobile-font-size: 1.875rem; /* 30px */
+  --text-preset-2-mobile-font-size: 1.5rem; /* 24px */
+  --text-preset-3-mobile-font-size: 1.375rem; /* 22px */
+  --text-preset-4-mobile-font-size: 1.25rem; /* 20px */
+  --text-preset-6-mobile-font-size: 0.875rem; /* 14px */
 
   background-image:  url(../src/assets/pattern-squiggly-line-bottom-desktop.svg), url(../src/assets/pattern-squiggly-line-top.svg), url(../src/assets/background-desktop.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom left, top right, center;
-  background-size: auto, auto, cover;
+  background-size: 40%, 30%, cover;
 }
-
 html {
-  box-sizing: border-box;
+  box-sizing: box-sizing;
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+  overflow-x: hidden; 
+}
 #root {
   width: 100%;
 }
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
 
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center;
+  display: flex;
   min-width: 350px;
-  min-height: 100vh; */
+  min-height: 100vh;
   color: var(--color-neutral-0);
 }
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
-
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-/* 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

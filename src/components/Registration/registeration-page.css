@@ -1,0 +1,129 @@
+.sub-heading {
+  color: var(--color-neutral-500);
+  padding: 4px;
+  font-family: InconsolataMedium;
+  font-size: var(--text-preset-4-font-size);
+  line-height: 120%;
+  letter-spacing: -0.5px;
+}
+
+.form-container {
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.form-element {
+  display: grid;
+  font-family: InconsolataMedium;
+  font-size: var(--text-preset-5-font-size);
+  line-height: 110%;
+  letter-spacing: -0.3px;
+  padding: 8px;
+}
+.file-upload {
+  justify-items: center;
+  border-style: dashed;
+  border-color: var(--color-neutral-500);
+  border-radius: var(--border-radius-12);
+  margin-top: 12px;
+  padding: 14px;
+  color: var(--color-neutral-300);
+  opacity: 0.8;
+  width: 100%;
+  font-family: InconsolataRegular;
+  font-size: var(--text-preset-6-font-size);
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+.upload-icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-style: solid;
+  border-color: var(--color-neutral-500);
+  border-radius: var(--border-radius-12);
+  background-color: var(--color-neutral-700);
+  margin-right: 8px;
+}
+.hint-text {
+  display: flex;
+  font-family: InconsolataRegular;
+  font-size: var(--text-preset-7-font-size);
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  color: var(--color-neutral-300);
+}
+.hint-text p {
+  margin-left: 4px;
+}
+input[type='text'], input[type='email'] {
+  font-family: InconsolataRegular;
+  font-size: var(--text-preset-6-font-size);
+  line-height: 120%;
+  letter-spacing: 0px;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0px;
+  color: var(--color-neutral-300);
+  border-radius: var(--border-radius-12);
+  background-color: transparent;;
+  border-color: var(--color-neutral-500);
+  border-style: solid;
+  border-width: 1px;
+}
+input[type='text']:hover, input[type='email']:hover{
+  background-color: var(--color-neutral-500);
+  border-color: var(--color-neutral-300);
+}
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 2px;
+  border-radius: var(--border-radius-12);
+  background-color: var(--color-orange-500);
+  color: var(--color-neutral-900);
+  font-family: InconsolataExtraBold;
+  font-size: var(--text-preset-5-font-size);
+  line-height: 110%;
+  letter-spacing: -0.3px;
+}
+button:hover {
+  background-color: var(--color-orange-700);
+}
+
+@media screen and (max-width: 1440px) {
+  /* .logo-header {
+    width: 12%;
+  } */
+  /* .main-heading {
+    width: 60%;
+  } */
+  .form-container {
+    width: 30%; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* .logo-header {
+    width: 15%;
+  }
+  .main-heading {
+    width: 80%;
+  } */
+  .form-container {
+    width: 40%; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .logo-header {
+    width: 30%;
+  }
+  .main-heading {
+    width: 70%;
+    font-size: var(--text-preset-2-mobile-font-size);
+  } */
+  .form-container {
+    width: 80%; 
+  }
+}

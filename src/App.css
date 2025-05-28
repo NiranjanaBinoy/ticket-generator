@@ -1,70 +1,56 @@
-  .logo-header {
-    display: flex;
-    flex-direction: row;
-    width: 15%;
-    margin: auto;
-  }
-  .logo-header img {
+.logo-header {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px 0;
+  img {
     width: 20px;
   }
-  .logo-header .heading-name {
-    font-size: 1rem;
-    font-weight: bold;
+  .logo-heading-name {
+    font-family: InconsolataExtraBold;
+    font-size: var(--text-preset-5-font-size);
+    line-height: 110%;
+    letter-spacing: -0.3px;
     padding-left: 16px;
   }
-  .heading{
-  text-align: center;
-  width: 35%;
-  margin: 0px auto;
-  }
-  .form-container {
-    width: 30%; 
-    margin: 10px auto;
-    padding: 20px;
-  }
-  .form-element {
-    font-size: 1rem;
-    display: grid;
-    padding: 8px;
-  }
+}
 
-  input[type='text'] {
-    padding: 14px;
-    margin: 12px 0px;
-    border-radius: var(--border-radius-12);
-    background-color: transparent;
-    border-color: var(--color-neutral-500);
-    border-style: solid;
-    border-width: 1px;
-  }
-  button {
-    width: 100%;
-    padding: 14px;
-    margin: 12px 2px;
-    border-radius: var(--border-radius-12);
-    background-color: var(--color-orange-500);
-    color: var(--color-neutral-900);
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  button:hover {
-    background-color: var(--color-orange-700);
-  }
-  .file-upload {
-    justify-items: center;
-    border-style: dashed;
-    border-color: var(--color-neutral-500);
-    border-radius: var(--border-radius-12);
-    margin-top: 12px;
-    padding: 14px;
-    color: var(--color-neutral-300);
-    opacity: 0.8;
+.heading{
+  text-align: center;
 }
-.hint-text {
-  display: flex;
-  font-size: 12px;
-  color: var(--color-neutral-300);
+
+.main-heading {
+  margin: 0px auto;
+  font-family: InconsolataExtraBold;
+  font-size: var(--text-preset-1-font-size);
+  line-height: 110%;
+  letter-spacing: -1px;
 }
-.hint-text p {
-  margin-left: 4px;
+
+@media screen and (max-width: 1440px) {
+  .logo-header {
+    width: 12%;
+  }
+  .main-heading {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-header {
+    width: 15%;
+  }
+  .main-heading {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-header {
+    width: 30%;
+  }
+  .main-heading {
+    width: 70%;
+    font-size: var(--text-preset-2-mobile-font-size);
+  }
 }

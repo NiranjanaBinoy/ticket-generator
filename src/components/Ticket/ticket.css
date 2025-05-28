@@ -1,0 +1,192 @@
+.name-header {
+  color: var(--color-orange-500);
+}
+.ticket-subheading {
+    margin: auto;
+    width: 40%;
+    font-family: InconsolataMedium;
+    font-size: var(--text-preset-4-font-size);
+    line-height: 120%;
+    letter-spacing: -0.5px;
+    padding-top: var(--spacing-300);
+
+}
+.ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--spacing-500);
+}
+.ticket-container {
+    position: relative;
+    max-width: 45%;
+}
+.ticket-pattern {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.ticket-logo-header {
+    display: flex;
+    flex-direction: row;
+    img {
+        width: 40px;
+    }
+    .logo-heading-name {
+        font-family: InconsolataBold;
+        font-size: var(--text-preset-2-font-size);
+        line-height: 110%;
+        letter-spacing: -1px;
+        padding-left: 16px;
+    }
+}
+
+.logo-container {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.date-location-container {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-family: InconsolataRegular;
+    font-size: var(--text-preset-6-font-size);
+    line-height: 120%;
+    letter-spacing: 0px;
+    width: 100%;
+    padding-top: 24px;
+    color: var(--color-neutral-300);
+}
+.date-location-separator {
+    font-family: InconsolataMedium;
+}
+.id-container {
+    position: absolute;
+    top: 35%;
+    left: 82%;
+    writing-mode: vertical-lr;
+    font-family: InconsolataMedium;
+    font-size: var(--text-preset-3-font-size);
+    line-height: 110%;
+    letter-spacing: -1px;
+    color: var(--color-neutral-500);
+}
+.avatar-image {
+    position: absolute;
+    top: 75%;
+    left: 12%; 
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: var(--border-radius-8);
+}
+
+.username {
+    position: absolute;
+    top: 67%;
+    margin-left: var(--spacing-300);
+    left: 69%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: var(--color-neutral-0);
+    font-family: InconsolataMedium;
+    font-size: var(--text-preset-3-font-size);
+    line-height: 110%;
+    letter-spacing: -1px;
+}
+.github-container{
+    position: absolute;
+    top: 81%;
+    left: 73%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.github-username {
+    font-family: InconsolataMedium;
+    font-size: var(--text-preset-5-font-size);
+    line-height: 120%;
+    letter-spacing: -0.5px;
+    color: var(--color-neutral-300);
+    margin-left: var(--spacing-075);
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .ticket-container {
+        max-width: 50%;
+    }
+    .ticket-subheading {
+        width: 50%;
+    }
+    .username {
+        margin-left: var(--spacing-500);
+        left: 65%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ticket-subheading {
+        padding-top: var(--spacing-200);
+        width: 80%;
+        font-size: var(--text-preset-4-mobile-font-size);
+    }
+    .ticket{
+        padding-left: var(--spacing-075);
+    }
+    .ticket-container {
+        max-width: 80%;
+    }
+    .ticket-logo-header {
+        img {
+            width: 30px;
+        }
+        .logo-heading-name {
+            padding-left: 8px;
+            font-size: var(--text-preset-2-mobile-font-size);
+        }
+    }
+    .id-container {
+        font-size: var(--text-preset-3-mobile-font-size);
+    }
+    .date-location-container {
+        padding-top: 4px;
+        font-size: var(--text-preset-6-mobile-font-size);
+    }
+    .avatar-image {
+        width: 45px;
+        height: 45px;
+        top: 80%;
+        left: 10%; 
+    }
+    .username {
+        top: 75%;
+        margin-left: var(--spacing-700);
+        left: 55%;
+        font-size: var(--text-preset-4-mobile-font-size);
+    }
+    .github-container{
+        padding-top: var(--spacing-300);
+        left: 69%
+    }
+    .github-username {
+        font-size: var(--text-preset-6-mobile-font-size);
+        margin-left: var(--spacing-050);
+    }
+    .github-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+}
