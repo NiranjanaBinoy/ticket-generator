@@ -16,7 +16,7 @@ export default function useGeoLocation(): LocationData {
     }, []);
 
     async function getLocation() {
-        const res = await axios.get("http://ip-api.com/json");
+        const res = await axios.get("https://ipapi.co/json/");
         if (res.status === 200)
             setLocationData(res.data)
     }

@@ -63,17 +63,42 @@ input[type='text'], input[type='email'] {
   letter-spacing: 0px;
   width: 100%;
   padding: 14px;
-  margin: 12px 0px;
-  color: var(--color-neutral-300);
+  margin-top: 12px;
+  color: var(--color-neutral-0);
   border-radius: var(--border-radius-12);
-  background-color: transparent;;
   border-color: var(--color-neutral-500);
   border-style: solid;
   border-width: 1px;
+  background-color: transparent;
+  opacity: 0.8;
 }
-input[type='text']:hover, input[type='email']:hover{
+input[type='text']::placeholder, input[type='email']::placeholder{
+  color: var(--color-neutral-300)
+}
+input[type='text']:hover, input[type='email']:hover, .file-upload:hover {
   background-color: var(--color-neutral-500);
   border-color: var(--color-neutral-300);
+  color: var(--color-neutral-0);
+  opacity: 0.5;
+}
+input[type='text']:focus, input[type='email']:focus, .file-upload:focus {
+  border-color: var(--color-neutral-500);
+  color: var(--color-neutral-0);
+  opacity: 1;
+  outline: thick double var(--color-neutral-500);
+}
+.errorMessage {
+  color: var(--color-orange-500);
+}
+.info-icon {
+  margin-top: var( --spacing-150);
+}
+.error-icon {
+  color: var(--color-orange-500);
+  margin-top: var(--spacing-150);
+}
+.fill-current {
+  stroke: currentColor;
 }
 button {
   width: 100%;
@@ -92,37 +117,18 @@ button:hover {
 }
 
 @media screen and (max-width: 1440px) {
-  /* .logo-header {
-    width: 12%;
-  } */
-  /* .main-heading {
-    width: 60%;
-  } */
   .form-container {
     width: 30%; 
   }
 }
 
 @media screen and (max-width: 1024px) {
-  /* .logo-header {
-    width: 15%;
-  }
-  .main-heading {
-    width: 80%;
-  } */
   .form-container {
     width: 40%; 
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* .logo-header {
-    width: 30%;
-  }
-  .main-heading {
-    width: 70%;
-    font-size: var(--text-preset-2-mobile-font-size);
-  } */
   .form-container {
     width: 80%; 
   }
